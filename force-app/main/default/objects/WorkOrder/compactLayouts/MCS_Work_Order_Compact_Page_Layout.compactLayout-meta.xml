@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCS_Work_Order_Compact_Page_Layout</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>AccountId</fields>
+    <fields>Subject</fields>
+    <fields>WorkTypeId</fields>
+    <fields>Status</fields>
+    <fields>CaseId</fields>
+    <label>MCS Work Order Compact Page Layout</label>
+</CompactLayout>

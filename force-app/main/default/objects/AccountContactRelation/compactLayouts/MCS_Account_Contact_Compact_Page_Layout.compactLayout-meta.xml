@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCS_Account_Contact_Compact_Page_Layout</fullName>
+    <fields>AccountId</fields>
+    <fields>ContactId</fields>
+    <fields>IsActive</fields>
+    <label>MCS Account Contact Compact Page Layout</label>
+</CompactLayout>

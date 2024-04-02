@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCS_Assigned_Resource_Compact_Page_Layout</fullName>
+    <fields>ServiceResourceId</fields>
+    <fields>ServiceAppointmentId</fields>
+    <label>MCS Assigned Resource Compact Page Layout</label>
+</CompactLayout>

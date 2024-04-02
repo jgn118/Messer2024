@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCS_Service_Appointment_Compact_Layout</fullName>
+    <fields>AppointmentNumber</fields>
+    <fields>IsBundle</fields>
+    <fields>AccountId</fields>
+    <fields>WorkTypeId</fields>
+    <fields>Status</fields>
+    <fields>FSL__Duration_In_Minutes__c</fields>
+    <label>MCS Service Appointment Compact Layout</label>
+</CompactLayout>
