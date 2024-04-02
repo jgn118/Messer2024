@@ -69,5 +69,86 @@
         <members>WorkType</members>
         <name>CustomObject</name>
     </types>
+    <types>
+        <members>Account.MCS_Account_Compact_Page_Layout</members>
+        <members>AccountContactRelation.MCS_Account_Contact_Compact_Page_Layout</members>
+        <members>Asset.MCS_Asset_Compact_Page_Layout</members>
+        <members>AssignedResource.MCS_Assigned_Resource_Compact_Page_Layout</members>
+        <members>Case.MCS_Case_Compact_Page_Layout</members>
+        <members>Contact.MCS_Contact_Compact_Page_Layout</members>
+        <members>FSL__Work_Rule__c.MCS_Work_Rule_Compact_Page_Layout</members>
+        <members>Lead.MCS_Lead_Compact_Page_Layout</members>
+        <members>MaintenanceAsset.MCS_Maintenance_Asset_Compact_Page_Layout</members>
+        <members>MaintenancePlan.MCS_Maintenance_Plan_Compact_Page_Layout</members>
+        <members>Opportunity.MCS_Opportunity_Compact_Page_Layout</members>
+        <members>ResourceAbsence.MCS_Resource_Absence_Compact_Page_Layout</members>
+        <members>ResourcePreference.MCS_Resource_Preference_Compact_Page_Layout</members>
+        <members>ServiceAppointment.MCS_Service_Appointment_Compact_Layout</members>
+        <members>ServiceResource.MCS_Service_Resource_Compact_Page_Layout</members>
+        <members>ServiceResourceSkill.MCS_Service_Resource_Skill_Compact_Page_Layout</members>
+        <members>ServiceTerritory.MCS_Service_Territory_Compact_Page_Layout</members>
+        <members>ServiceTerritoryMember.MCS_Service_Territory_Member_Compact_Page_Layout</members>
+        <members>TimeSheet.MCS_Time_Sheet_Compact_Page_Layout</members>
+        <members>TimeSheetEntry.MCS_Time_Sheet_Entry_Compact_Page_Layout</members>
+        <members>WorkOrder.MCS_Work_Order_Compact_Page_Layout</members>
+        <members>WorkOrderLineItem.MCS_Work_Order_Line_Item_Compact_Page_Layout</members>
+        <members>WorkPlan.MCS_Work_Plan_Compact_Page_Layout</members>
+        <members>WorkStep.MCS_Work_Step_Compact_Page_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Account.MCS_Credit_Approval__c</members>
+        <members>Account.MCS_Customer_Number__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Account-MCS Account Page Layout</members>
+        <members>AccountContactRelation-MCS Account Contact Relationship Page Layout</members>
+        <members>Asset-MCS Asset Page Layout</members>
+        <members>AssignedResource-MCS Assigned Resource Page Layout</members>
+        <members>Case-MCS Case Page Layout</members>
+        <members>Contact-MCS Contact Page Layout</members>
+        <members>Lead-MCS Lead Page Layout</members>
+        <members>MaintenanceAsset-MCS Maintenance Asset Page Layout</members>
+        <members>MaintenancePlan-MCS Maintenance Plan Page Layout</members>
+        <members>Opportunity-MCS Opportunity Page Layout</members>
+        <members>ResourceAbsence-MCS Resource Absence Page Layout</members>
+        <members>ResourcePreference-MCS Resource Preference Page Layout</members>
+        <members>ServiceAppointment-MCS Service Appointment Page Layout</members>
+        <members>ServiceResource-MCS Service Resource Page Layout</members>
+        <members>ServiceResourceSkill-MCS Service Resource Skill Page Layout</members>
+        <members>ServiceTerritory-MCS Service Territory Page Layout</members>
+        <members>ServiceTerritoryMember-MCS Service Territory Member Page Layout</members>
+        <members>TimeSheet-MCS Time Sheet Page Layout</members>
+        <members>TimeSheetEntry-MCS Time Sheet Entry Page Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>MCS_Applications_Engineer</members>
+        <members>MCS_Engineering</members>
+        <members>MCS_Engineering_Services</members>
+        <members>MCS_Executive</members>
+        <members>MCS_FSE</members>
+        <members>MCS_IT</members>
+        <members>MCS_Inside_Sales</members>
+        <members>MCS_Marketing_Team</members>
+        <members>MCS_Parts_Analyst</members>
+        <members>MCS_Phone_Engineer</members>
+        <members>MCS_Phone_Support</members>
+        <members>MCS_RSM</members>
+        <members>MCS_Service_Coordinator</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>MCS - Applications</members>
+        <members>MCS - Engineering</members>
+        <members>MCS - Field Service Engineer</members>
+        <members>MCS - Management</members>
+        <members>MCS - Phone Support</members>
+        <members>MCS - Sales</members>
+        <members>MCS - Service</members>
+        <name>Profile</name>
+    </types>
     <version>60.0</version>
 </Package>
