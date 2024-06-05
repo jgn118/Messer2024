@@ -24,14 +24,21 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_AAs</name>
+        <label>Create AAs</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <inputReference>Transform_1</inputReference>
+    </recordCreates>
     <recordLookups>
-        <name>Get_Product_Skill</name>
-        <label>Get Product Skill</label>
+        <name>Get_Prod_Specs</name>
+        <label>Get Prod Specs</label>
         <locationX>176</locationX>
         <locationY>323</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Transform_Prod_Skill_to_Machine_Skill</targetReference>
+            <targetReference>Transform_1</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -42,14 +49,14 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>MCS_Product_Skills__c</object>
+        <object>MCS_Product_Specs__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Get_Product_Skill</targetReference>
+            <targetReference>Get_Prod_Specs</targetReference>
         </connector>
         <object>Asset</object>
         <recordTriggerType>Create</recordTriggerType>
@@ -57,31 +64,27 @@
     </start>
     <status>Draft</status>
     <transforms>
-        <name>Transform_Prod_Skill_to_Machine_Skill</name>
-        <label>Transform Prod Skill to Machine Skill</label>
+        <name>Transform_1</name>
+        <label>Transform 1</label>
         <locationX>176</locationX>
         <locationY>431</locationY>
+        <connector>
+            <targetReference>Create_AAs</targetReference>
+        </connector>
         <dataType>SObject</dataType>
         <isCollection>true</isCollection>
-        <objectType>MCS_Machine_Skill__c</objectType>
+        <objectType>AssetAttribute</objectType>
         <scale>0</scale>
         <transformValues>
             <transformValueActions>
-                <outputFieldApiName>MCS_Skill_Id__c</outputFieldApiName>
+                <outputFieldApiName>AttributeDefinitionId</outputFieldApiName>
                 <transformType>Map</transformType>
                 <value>
-                    <elementReference>Get_Product_Skill[$EachItem].MCS_Skill_Id__c</elementReference>
+                    <elementReference>Get_Prod_Specs[$EachItem].MCS_Attribute_Definition__c</elementReference>
                 </value>
             </transformValueActions>
             <transformValueActions>
-                <outputFieldApiName>MCS_Skill__c</outputFieldApiName>
-                <transformType>Map</transformType>
-                <value>
-                    <elementReference>Get_Product_Skill[$EachItem].MCS_Skill__c</elementReference>
-                </value>
-            </transformValueActions>
-            <transformValueActions>
-                <outputFieldApiName>MCS_Mcahine__c</outputFieldApiName>
+                <outputFieldApiName>AssetId</outputFieldApiName>
                 <transformType>Map</transformType>
                 <value>
                     <elementReference>$Record.Id</elementReference>
